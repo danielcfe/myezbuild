@@ -1,1 +1,2 @@
-rvm --create use 1.9.3@bartender
+rvm use --create ruby-2.0.0-p247@data-base-monitoring
+rvm_trust_rvmrcs_flag=1

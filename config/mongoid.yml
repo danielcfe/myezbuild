@@ -1,12 +1,8 @@
-
 development:
-  host: localhost
-  database: bartender
-
-test:
-  host: localhost
-  database: bartender_test
-
+  sessions:
+    default:
+      database: data-base-monitoring-dev
+      hosts:
+        - localhost:27017
 production:
-  uri: <%= ENV['MONGOHQ_URL'] %>
-
+  uri: <%= ENV['MONGOHQ_URL'] %>        
