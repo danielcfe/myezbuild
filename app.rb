@@ -17,6 +17,6 @@ class App < Sinatra::Base
     end
   end
 
-  get('/'){ erb :index}
+  get('/'){ haml :index}
 
 end
