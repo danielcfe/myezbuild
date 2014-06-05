@@ -1,7 +1,7 @@
 development:
   sessions:
     default:
-      database: data-base-monitoring-dev
+      database: my-ez-build
       hosts:
         - localhost:27017
         

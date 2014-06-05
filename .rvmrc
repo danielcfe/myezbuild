@@ -1,2 +1,2 @@
-rvm use --create ruby-2.0.0-p247@data-base-monitoring
+rvm use --create ruby-2.0.0-p247@my-ez-build
 rvm_trust_rvmrcs_flag=1
