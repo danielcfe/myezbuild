@@ -1,15 +1,13 @@
 require 'rubygems'
 require 'sinatra/base'
-require 'slim'
+require 'haml'
 require 'sass'
 require 'mongoid'
 
 Mongoid.load!("config/mongoid.yml")
 
-Slim::Engine.set_default_options :sections => true
-
 class App < Sinatra::Base
-
+    
   set :public, File.join(File.dirname(__FILE__), 'public')
   set :views, File.join(File.dirname(__FILE__), 'views')
 
@@ -19,7 +17,6 @@ class App < Sinatra::Base
     end
   end
 
-
-  get('/'){ slim :layout}
+  get('/'){ erb :index}
 
 end
