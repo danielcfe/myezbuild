@@ -1,14 +1,52 @@
+@font-face {
+	font-family: 'Frutiger';
+	src: url('/fonts/FrutigerLTStd-Roman.eot?') format('eot'), 
+	     url('/fonts/FrutigerLTStd-Roman.otf')  format('opentype'),
+	     url('/fonts/FrutigerLTStd-Roman.woff') format('woff'), 
+	     url('/fonts/FrutigerLTStd-Roman.ttf')  format('truetype'),
+	     url('/fonts/FrutigerLTStd-Roman.svg#FrutigerLTStd-Roman') format('svg');
+}
+
+@font-face {
+	font-family: 'FrutigerLight';
+	src: url('/fonts/FrutigerLTStd-Light.eot?') format('eot'), 
+	     url('/fonts/FrutigerLTStd-Light.otf')  format('opentype'),
+	     url('/fonts/FrutigerLTStd-Light.woff') format('woff'), 
+	     url('/fonts/FrutigerLTStd-Light.ttf')  format('truetype'),
+	     url('/fonts/FrutigerLTStd-Light.svg#FrutigerLTStd-Light') format('svg');
+}
+
+
 body, html {
 	height: 100%;
 	width: 100%;
 }
 
 body, h1, h2, h3, h4, h5, h6 {
-	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-weight: 700;
-	text-align: center;
+	font-family: "FrutigerLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: lighter;
 }
 
+h1 {
+	font-size: 4em;
+	letter-spacing: -1px;
+}
+
+h2 {
+	font-family: "Frutiger", "Helvetica", "Arial";
+	font-size: 3.6em;
+	line-height: 1em;
+}
+
+h4 {
+	text-transform: uppercase;
+	font-family: 3.5em !important;
+}
+
+p {
+	font-size: 1.7em;
+	font-family: "FrutigerLight", "Helvetica Neue", "Arial", "sans-serif";
+}
 
 .lead {
 	font-size: 18px;
@@ -25,11 +63,9 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 .intro-message {
-	position: relative;
-	padding-top: 10%;
+	padding-top: 14%;
 	padding-bottom: 20%;
-	text-align: justify;
-	padding-right: 500px;
+	text-align: left;
 }
 
 .intro-message > h1 {
@@ -70,8 +106,27 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 .content-section-a {
-	background-color: #f8f8f8;
+	background-image: url("/img/benefits-bg.jpg");
 	padding: 50px 0;
+}
+
+.content-section-a h1, .content-section-b h1 {
+	text-align: center;
+}
+
+.content-section-a .container, .content-section-b .container{
+	margin: 2em auto;
+}
+.benefits {
+	text-align: center;
+}
+
+.benefits p {
+	font-size: 1.3em;
+}
+
+.benefits img{
+	margin: 1em auto;
 }
 
 .content-section-b {
@@ -80,21 +135,95 @@ body, h1, h2, h3, h4, h5, h6 {
 	padding: 50px 0;
 }
 
+.content-section-b .row {
+	margin: 3em 0;
+}
+
+.content-section-a.pricing{
+	background-image:url('/img/pricing-bg.jpg');
+	overflow: hidden;
+}
+
+.content-section-a.pricing .lead {
+	text-align: center;
+	margin: 1em 0 2em 0;
+}
+.content-section-a .col-md-9{
+	margin: 0 0 0 10em;
+}
+
 .section-heading {
 	margin-bottom: 30px;
 }
 
 .section-heading-spacer {
-	border-top: 3px solid #d0d0d0;
+	border-top: 1px solid #aeaeae;
 	width: 200px;
-	
+	margin: 0 auto;
 }
 
 .section-between-spacer {
-	border-top: 2px solid #d0d0d0;
+	border-top: 1px solid #d0d0d0;
 	width: cover;
-	
+}
 
+ul {
+	margin-left: -22px;
+}
+
+li {
+	line-height: 1.7em;
+}
+
+li.lead {
+	margin: 0 !important;
+}
+
+.col-md-4 {
+	width: 31% !important;
+}
+
+.col-md-10.checkmarks {
+	margin: 3% 0 0 10% !important;
+}
+
+.prices {
+	background-color: white;
+	margin: 0 2.2% 0 0;
+	padding: 2%;
+}
+
+.prices .section-heading-spacer{
+	width: 100px !important;
+}
+
+.prices .section-between-spacer{
+	width: 50%;
+}
+
+.prices h3, .prices h4 {
+	text-align: center;
+}
+
+.prices h4 {
+	font-size: 1.5em;
+	text-transform: none;
+}
+
+.prices li {
+	text-align: left;
+}
+
+.prices .btn{
+  font-size: 1.4em;
+  margin: 0 0 0 3%; 
+}
+.line-through {
+	text-decoration: line-through;
+}
+
+.important {
+	color: #e3576d;
 }
 
 footer {

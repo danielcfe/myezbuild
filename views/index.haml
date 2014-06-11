@@ -7,7 +7,8 @@
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-      %a.navbar-brand myEZbuild
+      %a.navbar-brand
+        %img{:src=>"/img/logo.jpg"}
     / Collect the nav links, forms, and other content for toggling
     .collapse.navbar-collapse.navbar-right.navbar-ex1-collapse
       %ul.nav.navbar-nav
@@ -33,12 +34,12 @@
   .container
     .row
       .col-lg-12
-        .intro-message
-          %h2{style: "text-align:left"} A new way to manage
-          %h2{style: "text-align:left"} your construction project.
-          %p{style: "font-size:20px"} Designed for you, the homeowner, taking the fear of the unknown out of the home building process and giving you a sense of control even if you have never built before and even you don't know the first thing about construction.
-          %hr.intro-divider/
-          %button.btn.btn-success{type: "button"} SIGN UP NOW AND SAVE
+        .intro-message.col-xs-7
+          %h2 A new way to manage your construction project.
+          %p Designed for you, the homeowner, taking the fear of the unknown out of the home building process and giving you a sense of control even if you have never built before and even you don't know the first thing about construction.
+          %button.btn.btn-success
+            SIGN UP NOW AND SAVE 
+            %img{:src=>"/img/arrow-down.svg"}
   / /.container
 / /.intro-header
 / End of HEADER
@@ -47,56 +48,41 @@
   %h1 Benefits
   %hr.section-heading-spacer/
   .container
-    .row
-      .col-md-4
-        %img.img-responsive{alt: "", src: ""}/
-      .col-md-4
-        %img.img-responsive{alt: "", src: ""}/
-      .col-md-4
-        %img.img-responsive{alt: "", src: ""}/
-    .row
-      .col-md-4
-        %h4 EASY
-      .col-md-4
-        %h4 INFORMATIVE
-      .col-md-4
-        %h4 AFFORDABLE
-    .row
-      .col-md-4
-        %p As easy to use email. The program comes "pre-set" to build a typical home, all you have to do is adjust the timeline and budget parameters.
-        %a{target: "_blank"} Read more
-      .col-md-4
-        %p You can view the progress, timeline, budget, immediate to-do's and emails notices all at once and then drill down to get more information.
-        %a{target: "_blank"} Read more
-      .col-md-4
-        %p When you think of what you are riskind and investing, and it's potential outcomes, this program is astonishingly affordable, practical and a must have.
-        %a{target: "_blank"} Read more
+    .benefits.col-md-4
+      %img.img-responsive{alt:"", src: "/img/benefits-easy.svg"}/
+      %h4 EASY
+      %p As easy to use as email. The program comes "pre-set" to build a typical home, all you have to do is adjust the timeline and budget parameters.
+      %a{target: "_blank"} Read more
+
+    .benefits.col-md-4
+      %img.img-responsive{alt: "", src: "/img/benefits-informative.svg"}/
+      %h4 INFORMATIVE
+      %p You can view the progress, timeline, budget, immediate to-do's and emails notices all at once and then drill down to get more information.
+      %a{target: "_blank"} Read more
+    .benefits.col-md-4
+      %img.img-responsive{alt: "", src: "/img/benefits-affordable.svg"}/
+      %h4 AFFORDABLE
+      %p When you think of what you are riskind and investing, and it's potential outcomes, this program is astonishingly affordable, practical and a must have.
+      %a{target: "_blank"} Read more
+
   / /.container
   .container
-    .row
-      .col-md-4
-        %img.img-responsive{alt: "", src: ""}/
-      .col-md-4
-        %img.img-responsive{alt: "", src: ""}/
-      .col-md-4
-        %img.img-responsive{alt: "", src: ""}/
-    .row
-      .col-md-4
-        %h4 ACCOUNTABILITY
-      .col-md-4
-        %h4 DECISIONS
-      .col-md-4
-        %h4 MOBILITY
-    .row
-      .col-md-4
-        %p MyEZBuild's owner/builder contract holds the builder accountable to updating the budget and timeline on a specific weekly or bi-weekly basis.
-        %a{target: "_blank"} Read more
-      .col-md-4
-        %p We have eliminated all the guess work by preparing a list of all the material selections you will need to make for a standard 3 bedroom, 2.5 bath home.
-        %a{target: "_blank"} Read more
-      .col-md-4
-        %p Documents, budgets, timelines, changes, material selections and communication, can be accessed from any mobbile device or computer with internet connection.
-        %a{target: "_blank"} Read more
+    .benefits.col-md-4
+      %img.img-responsive{alt: "", src: "/img/benefits-accountability.svg"}/
+      %h4 ACCOUNTABILITY
+      %p MyEZBuild's owner/builder contract holds the builder accountable to updating the budget and timeline on a specific weekly or bi-weekly basis.
+      %a{target: "_blank"} Read more
+    .benefits.col-md-4
+      %img.img-responsive{alt: "", src: "/img/benefits-decision.svg"}/
+      %h4 DECISIONS
+      %p We have eliminated all the guess work by preparing a list of all the material selections you will need to make for a standard 3 bedroom, 2.5 bath home.
+      %a{target: "_blank"} Read more
+    .benefits.col-md-4
+      %img.img-responsive{alt: "", src: "/img/benefits-mobility.svg"}/
+      %h4 MOBILITY
+      %p Documents, budgets, timelines, changes, material selections and communication, can be accessed from any mobbile device or computer with internet connection.
+      %a{target: "_blank"} Read more        
+
 / /.content-section-a
 / End of BENEFITS SECTION
 / TOUR SECTION
@@ -105,9 +91,9 @@
   %hr.section-heading-spacer/
   .container
     .row
-      .col-md-6{style: "text-align:justify"}
+      .col-md-6
         .clearfix
-        %h3.section-heading{style: "text-align:justify"}
+        %h3.section-heading
           ORGANIZE YOUR PROJECT
         %ul.lead
           %li Urgent To-do's are shown on your dashboard when opening your project file.
@@ -115,24 +101,24 @@
           %li Critical path To-do's are generated automatically for youby the builder when he set's up the timeline. These to-do's must be completed on time to keep the project on schedule.
         %a{target: "_blank"} READ MORE
       .col-md-6
-        %img.img-responsive{alt: "", src: ""}/
+        %img.img-responsive{alt: "", src: "/img/tour-todo.jpg"}/
+    %hr.section-between-spacer/
     .row
       .col-md-6
-        %img.img-responsive{alt: "", src: ""}/
-      .col-md-6{style: "text-align:justify"}
-        %hr.section-between-spacer/
+        %img.img-responsive{alt: "", src: "/img/tour-timeline.jpg"}/
+      .col-md-6
         .clearfix
-        %h3.section-heading{style: "text-align:justify"} KNOW WHEN YOUR PROJECT WILL BE READY
+        %h3.section-heading KNOW WHEN YOUR PROJECT WILL BE READY
         %ul.lead
           %li Having a timeline front and center everyday keeps everyone focus on the prixe, the move in date.
           %li Once the timeline is initially set up by your Builder, the owner will lock it in. Any subsequent changes to the timeline will be name and date stamped with whomever made the changes.
           %li The timeline is generated and linked to the to-do list, these "critical path" to-do's need to be checked off in order dor the timeline to move forward.
         %a{target: "_blank"} READ MORE
+    %hr.section-between-spacer/
     .row
-      .col-md-6{style: "text-align:justify"}
-        %hr.section-between-spacer/
+      .col-md-6
         .clearfix
-        %h3.section-heading{style: "text-align:justify"}
+        %h3.section-heading
           ALLOCATE YOUR BUDGET
         %ul.lead
           %li "Real time" Budget summary is always visible on your project dashboard.
@@ -141,24 +127,24 @@
           %li All change orders are shown in the busget for future budget projections.
         %a{target: "_blank"} READ MORE
       .col-md-6
-        %img.img-responsive{alt: "", src: ""}/
+        %img.img-responsive{alt: "", src: "/img/tour-budget.jpg"}/
+    %hr.section-between-spacer/
     .row
       .col-md-6
-        %img.img-responsive{alt: "", src: ""}/
-      .col-md-6{style: "text-align:justify"}
-        %hr.section-between-spacer/
+        %img.img-responsive{alt: "", src: "/img/tour-messages.jpg"}/
+      .col-md-6
         .clearfix
-        %h3.section-heading{style: "text-align:justify"} COMMUNICATE WITH YOUR TEAM
+        %h3.section-heading COMMUNICATE WITH YOUR TEAM
         %ul.lead
           %li Newest emails are visible on your dashboard.
           %li Keep your project communication separate from personal with integrated email.
           %li All communication is documentes throughout and archive at the close of the project.
         %a{target: "_blank"} READ MORE
+    %hr.section-between-spacer/
     .row
-      .col-md-6{style: "text-align:justify"}
-        %hr.section-between-spacer/
+      .col-md-6
         .clearfix
-        %h3.section-heading{style: "text-align:justify"}
+        %h3.section-heading
           YOUR HOME, YOUR STYLE
         %ul.lead
           %li Pre-set itemized list of products and materials for the interior and exterior of your house.
@@ -167,14 +153,14 @@
           %li Once you have decided a selection if final just check the box in the file, the folder color changes, and a copy is automatically sent to the builder as a signal to order the materials.
         %a{target: "_blank"} READ MORE
       .col-md-6
-        %img.img-responsive{alt: "", src: ""}/
+        %img.img-responsive{alt: "", src: "/img/tour-materialsandfiles.jpg"}/
+    %hr.section-between-spacer/
     .row
       .col-md-6
-        %img.img-responsive{alt: "", src: ""}/
-      .col-md-6{style: "text-align:justify"}
-        %hr.section-between-spacer/
+        %img.img-responsive{alt: "", src: "/img/tour-filecabinet.jpg"}/
+      .col-md-6
         .clearfix
-        %h3.section-heading{style: "text-align:justify"} EVERYTHING IN THE SAME PLACE
+        %h3.section-heading EVERYTHING IN THE SAME PLACE
         %ul.lead
           %li Virtual file cabinet preset with typical folders you will need for your project.
           %li All invoices, change orders and estimates are automatically saved to their designated folders when they are accepted or rejected by you.
@@ -185,19 +171,21 @@
 / /.content-section-b
 / End of TOUR SECTION
 / PRICING SECTION
-.content-section-a
+.content-section-a.pricing
   %h1 Pricing
   %hr.section-heading-spacer/
   .container
-    %p.lead{style: "padding: 0 10% 0 10%"} Sign up for MyEZBuild membership while it's still in development and you can lock in your monthly billing for a great discounted rate for life. Billing will start only when the product is released.
+    .col-md-9
+      %p.lead Sign up for MyEZBuild membership while it's still in development and you can lock in your monthly billing for a great discounted rate for life. Billing will start only when the product is released.
+    .clearfix
     .row
-      .col-md-3{style: "background-color:white; margin-left:40px"}
+      .col-md-4.prices
         %h3 BASIC
         %hr.section-heading-spacer/
-        %h4{style: "text-decoration:line-through"} $89/month
-        %h4{style: "color:red"} $39/month - Limited time only
+        %h4.line-through $89/month
+        %h4.important $39/month - Limited time only
         %hr.section-between-spacer/
-        %ul.lead{style: "text-align:left"}
+        %ul.lead
           %li Single project at a time capabilities.
           %li Community home owners forum to exchange ideas and ask questions.
           %li
@@ -205,16 +193,14 @@
             %ul
               %li No virtual cabinet.
               %li No integrated email.
-        %hr.section-between-spacer/
-        %button.btn.btn-success{style: "margin-bottom:5%", type: "button"} CONTACT US TO GET STARTED
-      .col-md-1
-      .col-md-3{style: "background-color:white"}
+        %button.btn.btn-success CONTACT US TO GET STARTED
+      .col-md-4.prices
         %h3 PREMIUM
         %hr.section-heading-spacer/
-        %h4{style: "text-decoration:line-through"} $145/month
-        %h4{style: "color:red"} $69/month - Limited time only
+        %h4.line-through $145/month
+        %h4.important $69/month - Limited time only
         %hr.section-between-spacer/
-        %ul.lead{style: "text-align:left"}
+        %ul.lead
           %li
             Full Project management:
             %ul
@@ -222,41 +208,44 @@
               %li Integrated email.
           %li Manage up to 3 projects at a time.
           %li Community home owners forum to exchange ideas and ask questions.
-        %hr.section-between-spacer{style: "margin-top:17%"}/
-        %button.btn.btn-success{style: "margin-bottom:5%", type: "button"} CONTACT US TO GET STARTED
-      .col-md-1
-      .col-md-3{style: "background-color:white"}
+        %button.btn.btn-success CONTACT US TO GET STARTED
+      .col-md-4.prices
         %h3 ULTRA
         %hr.section-heading-spacer/
-        %h4{style: "text-decoration:line-through"} $195/month
-        %h4{style: "color:red"} $99/month - Limited time only
+        %h4.line-through $195/month
+        %h4.important $99/month - Limited time only
         %hr.section-between-spacer/
-        %ul.lead{style: "text-align:left"}
+        %ul.lead
           %li Unlimited number of projects.
           %li 1-hour phone call consultation with the EZ Build team per month.
           %li Unlimited emails to My EZ Builds team regarding your home building process.
-        %hr.section-between-spacer{style: "margin-top:17%"}/
-        %button.btn.btn-success{style: "margin-bottom:5%", type: "button"} CONTACT US TO GET STARTED
-    .row{style: "margin-top:50px; text-align:left"}
-      .col-md-6
-        %ul.list-inline
-          %li.glyphicon.glyphicon-ok-circle
-          %li.lead Monthly billing, as long as your project is active.
-        %ul.list-inline
-          %li.glyphicon.glyphicon-ok-circle
-          %li.lead You can cancel your subscription at anytime.
-        %ul.list-inline
-          %li.glyphicon.glyphicon-ok-circle
-          %li.lead 60 day money back guarantee.
-      .col-md-6
-        %ul.list-inline
-          %li.glyphicon.glyphicon-ok-circle
-          %li.lead Full software support forum.
-        %ul.list-inline
-          %li.glyphicon.glyphicon-ok-circle
-          %li.lead Community forum of others building a home.
+        %button.btn.btn-success CONTACT US TO GET STARTED
+    .row
+      .col-md-10.checkmarks
+        .col-md-6
+          %ul.list-inline
+            %li
+              %img{:src=>"/img/checkmark.svg"}
+            %li.lead Monthly billing, as long as your project is active.
+          %ul.list-inline
+            %li
+              %img{:src=>"/img/checkmark.svg"}
+            %li.lead You can cancel your subscription at anytime.
+          %ul.list-inline
+            %li
+              %img{:src=>"/img/checkmark.svg"}
+            %li.lead 60 day money back guarantee.
+        .col-md-6
+          %ul.list-inline
+            %li
+              %img{:src=>"/img/checkmark.svg"}
+            %li.lead Full software support forum.
+          %ul.list-inline
+            %li
+              %img{:src=>"/img/checkmark.svg"}
+            %li.lead Community forum of others building a home.
     %hr.section-between-spacer/
-    %p.lead{style: "padding: 0 7% 0 7%"} It is helpful to remember that most bank construction loans require that the home be completed in 9-12 months. So you will only need a subscription to this service for as long as you need your project active. When you are finished you can archive and download your project. It is free to reactivate MyEZBuild at any time as well as upgrade your subscription.
+    %p.lead It is helpful to remember that most bank construction loans require that the home be completed in 9-12 months. So you will only need a subscription to this service for as long as you need your project active. When you are finished you can archive and download your project. It is free to reactivate MyEZBuild at any time as well as upgrade your subscription.
   / /.container
 / /.content-section-a
 / End of PRICING SECTION
