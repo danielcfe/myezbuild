@@ -227,6 +227,20 @@ li.lead {
 }
 
 footer {
-	background-color: #383838;
+	background-image: url('/img/footer-bg.jpg');
 	padding: 50px 0;
+}
+
+footer p {
+	color: white;
+	line-height: 0.5em !important;
+}
+
+footer a {
+	text-transform: none;
+}
+
+.smalleritalic {
+	font-size: 100%;
+	font-style:italic;
 }
