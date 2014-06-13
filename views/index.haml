@@ -13,19 +13,19 @@
     .collapse.navbar-collapse.navbar-right.navbar-ex1-collapse
       %ul.nav.navbar-nav
         %li
-          %a HOME
+          %a{:href=>"/#home"} HOME
         %li
-          %a BENEFITS
+          %a{:href=>"/#benefits"} BENEFITS
         %li
-          %a TOUR
+          %a{:href=>"/#tour"} TOUR
         %li
-          %a PRICING
+          %a{:href=>"/#pricing"} PRICING
         %li
-          %a THE TEAM
+          %a{:href=>"/#team"} THE TEAM
         %li
           %a BLOG
         %li
-          %a CONTACT
+          %a{:href=>"/#contact"} CONTACT
     / /.navbar-collapse
   / /.container
 / End of NAV BAR
@@ -34,18 +34,19 @@
   .container
     .row
       .col-lg-12
-        .intro-message.col-xs-7
+        .intro-message.col-xs-7#home
           %h2 A new way to manage your construction project.
           %p Designed for you, the homeowner, taking the fear of the unknown out of the home building process and giving you a sense of control even if you have never built before and even you don't know the first thing about construction.
-          %button.btn.btn-success
-            SIGN UP NOW AND SAVE 
-            %img{:src=>"/img/arrow-down.svg"}
+          %a{:href=>"/#pricing"}
+            %button.btn.btn-success
+              SIGN UP NOW AND SAVE 
+              %img{:src=>"/img/arrow-down.svg"}
   / /.container
 / /.intro-header
 / End of HEADER
 / BENEFITS SECTION
-.content-section-a
-  %h1 Benefits
+.content-section-a#benefits
+  %h1 Benefits 
   %hr.section-heading-spacer/
   .container
     .benefits.col-md-4
@@ -86,7 +87,7 @@
 / /.content-section-a
 / End of BENEFITS SECTION
 / TOUR SECTION
-.content-section-b
+.content-section-b#tour
   %h1 Tour
   %hr.section-heading-spacer/
   .container
@@ -171,7 +172,7 @@
 / /.content-section-b
 / End of TOUR SECTION
 / PRICING SECTION
-.content-section-a.pricing
+.content-section-a.pricing#pricing
   %h1 Pricing
   %hr.section-heading-spacer/
   .container
@@ -250,7 +251,7 @@
 / /.content-section-a
 / End of PRICING SECTION
 / THE TEAM SECTION
-.content-section-b
+.content-section-b#team
   %h1 The Team
   %hr.section-heading-spacer/
   .container
@@ -284,7 +285,7 @@
         %img{:src=>"/img/softwarecriollo.jpg"}
 / End of THE TEAM SECTION
 / FOOTER
-%footer
+%footer#contact
   .container
     .row
       .col-md-4
@@ -294,8 +295,8 @@
       .col-md-4
       .col-md-4
         %p.lead Contact us:
-        %a.lead support@myezbuild.com
-        %a.lead softwaresupport@myezbuild.com
+        %a.lead{:href=>"mailto:support@myezbuild.com"} support@myezbuild.com
+        %a.lead{:href=>"mailto:softwaresupport@myezbuild.com"} softwaresupport@myezbuild.com
         
 
 
