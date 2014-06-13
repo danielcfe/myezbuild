@@ -123,17 +123,19 @@
           %li Urgent To-do's are shown on your dashboard when opening your project file.
           %li Create and date your to-do items and they will progress from green, to yellow, to red automatically.
           %li Critical path To-do's are generated automatically for youby the builder when he set's up the timeline. These to-do's must be completed on time to keep the project on schedule.
-      %a{"data-toggle" => "collapse", :href => ".collapse1"} 
-        Read more
-      .collapse1.panel-collapse.collapse
-        .panel-body
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        %a{"data-toggle" => "collapse", :href => ".collapse1"} 
+          Read more
+        .collapse1.panel-collapse.collapse
+          .panel-body
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
       .col-md-6
-        %img.img-responsive{alt: "", src: "/img/tour-todo.jpg"}/
+        %modal.fancybox{'data-fancybox-href' => '/img/tour-todo.jpg'}
+          %img.img-responsive{alt: "", src: "/img/tour-todo.jpg"}/
     %hr.section-between-spacer/
     .row
       .col-md-6
-        %img.img-responsive{alt: "", src: "/img/tour-timeline.jpg"}/
+        %a.fancybox{href: '/img/tour-timeline.jpg'}
+          %img.img-responsive{alt: "", src: "/img/tour-timeline.jpg"}/
       .col-md-6
         .clearfix
         %h3.section-heading KNOW WHEN YOUR PROJECT WILL BE READY
@@ -163,11 +165,13 @@
           .panel-body
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
       .col-md-6
-        %img.img-responsive{alt: "", src: "/img/tour-budget.jpg"}/
+        %a.fancybox{href: '/img/tour-budget.jpg'}
+          %img.img-responsive{alt: "", src: "/img/tour-budget.jpg"}/
     %hr.section-between-spacer/
     .row
       .col-md-6
-        %img.img-responsive{alt: "", src: "/img/tour-messages.jpg"}/
+        %a.fancybox{href: '/img/tour-messages.jpg'}
+          %img.img-responsive{alt: "", src: "/img/tour-messages.jpg"}/
       .col-md-6
         .clearfix
         %h3.section-heading COMMUNICATE WITH YOUR TEAM
@@ -197,11 +201,13 @@
           .panel-body
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
       .col-md-6
-        %img.img-responsive{alt: "", src: "/img/tour-materialsandfiles.jpg"}/
+        %a.fancybox{href: '/img/tour-materialsandfiles.jpg'}
+          %img.img-responsive{alt: "", src: "/img/tour-materialsandfiles.jpg"}/
     %hr.section-between-spacer/
     .row
       .col-md-6
-        %img.img-responsive{alt: "", src: "/img/tour-filecabinet.jpg"}/
+        %a.fancybox{href: '/img/tour-filecabinet.jpg'}
+          %img.img-responsive{alt: "", src: "/img/tour-filecabinet.jpg"}/
       .col-md-6
         .clearfix
         %h3.section-heading EVERYTHING IN THE SAME PLACE
@@ -357,5 +363,26 @@
         %a.lead{:href=>"mailto:support@myezbuild.com"} support@myezbuild.com
         %a.lead{:href=>"mailto:softwaresupport@myezbuild.com"} softwaresupport@myezbuild.com
         
+/javascript for this page
+
+%link{href: "js/fancybox/jquery.fancybox.css", rel: "stylesheet", type: "text/css"}
+%script{src: "js/fancybox/jquery.mousewheel-3.0.6.pack.js"}
+%script{src: "js/fancybox/jquery.fancybox.js"}
+
+
+:javascript
+  $(document).ready(function() {
+    $(".fancybox").fancybox({
+      openEffect  : 'none',
+      closeEffect : 'none',
+      nextEffect  : 'none',
+      prevEffect  : 'none',
+      padding     : 0,
+      margin      : [20, 60, 20, 60],
+      beforeLoad: function(){
+        $('html,body').css('height','auto')
+      }
+    });
+  });
 
 
