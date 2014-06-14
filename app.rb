@@ -3,8 +3,15 @@ require 'sinatra/base'
 require 'haml'
 require 'sass'
 require 'mongoid'
+require 'pony'
+require 'mail'
 
 Mongoid.load!("config/mongoid.yml")
+
+this_dir = Pathname.new(File.dirname(__FILE__))
+['models/**/*'].each do |dir_path|
+  Dir[dir_path].each { |file_name| require this_dir + "./#{file_name}"}
+end
 
 class App < Sinatra::Base
     
@@ -17,6 +24,20 @@ class App < Sinatra::Base
     end
   end
 
-  get('/'){ haml :index}
+  get('/')do
+    @lead = Lead.new
+    @options = ConfigLead.setup
+    haml :index
+  end
+
+  post "/lead" do
+    Mailer.send_lead(params[:name], params[:email], params[:comment], params[:type])
+  end
+
+  get('/') do
+    @lead = Lead.new
+    @options = ConfigLead.setup
+    haml :"frontend/index", :layout => :"frontend/layout"
+  end
 
 end

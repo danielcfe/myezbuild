@@ -9,6 +9,8 @@ gem 'sass'
 gem 'unicorn'
 gem 'mongoid'
 gem 'haml'
+gem 'pony'
+gem 'mail', '2.5.4'
 
 group :development do
   gem 'foreman'

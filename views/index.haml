@@ -247,7 +247,7 @@
             %ul
               %li No virtual cabinet.
               %li No integrated email.
-        %button.btn.btn-success CONTACT US TO GET STARTED
+        %button.btn.btn-success.fancymodal{"data-fancybox-href" => "#lead-content","data-type" => 'BASIC'} CONTACT US TO GET STARTED
       .col-md-4.prices
         %h3 PREMIUM
         %hr.section-heading-spacer/
@@ -262,7 +262,7 @@
               %li Integrated email.
           %li Manage up to 3 projects at a time.
           %li Community home owners forum to exchange ideas and ask questions.
-        %button.btn.btn-success CONTACT US TO GET STARTED
+        %button.btn.btn-success.fancymodal{"data-fancybox-href" => "#lead-content","data-type" => 'PREMIUM'} CONTACT US TO GET STARTED
       .col-md-4.prices
         %h3 ULTRA
         %hr.section-heading-spacer/
@@ -273,7 +273,7 @@
           %li Unlimited number of projects.
           %li 1-hour phone call consultation with the EZ Build team per month.
           %li Unlimited emails to My EZ Builds team regarding your home building process.
-        %button.btn.btn-success CONTACT US TO GET STARTED
+        %button.btn.btn-success.fancymodal{"data-fancybox-href" => "#lead-content","data-type" => 'ULTRA'} CONTACT US TO GET STARTED
     .row
       .col-md-10.checkmarks
         .col-md-6
@@ -362,27 +362,25 @@
         %p.lead Contact us:
         %a.lead{:href=>"mailto:support@myezbuild.com"} support@myezbuild.com
         %a.lead{:href=>"mailto:softwaresupport@myezbuild.com"} softwaresupport@myezbuild.com
+
+/Modal
         
+#lead-content{style: "display: none;"}
+  %section.form{ style: "width: 400px;"}
+  .container-fluid
+    .row
+      .col-md-10.col-md-offset-1
+        %h2{style:"font-size: 35px;"} Contact Us
+        %form#lead{action: "#{url "/leads"}", method: "POST", role: "form"}
+          = haml :"_form", :layout => false
+
 /javascript for this page
 
 %link{href: "js/fancybox/jquery.fancybox.css", rel: "stylesheet", type: "text/css"}
 %script{src: "js/fancybox/jquery.mousewheel-3.0.6.pack.js"}
 %script{src: "js/fancybox/jquery.fancybox.js"}
+%script{src: "js/jquery.tooltipster.js"}
+%script{src: "js/lead.js"}
 
-
-:javascript
-  $(document).ready(function() {
-    $(".fancybox").fancybox({
-      openEffect  : 'none',
-      closeEffect : 'none',
-      nextEffect  : 'none',
-      prevEffect  : 'none',
-      padding     : 0,
-      margin      : [20, 60, 20, 60],
-      beforeLoad: function(){
-        $('html,body').css('height','auto')
-      }
-    });
-  });
 
 
