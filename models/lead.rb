@@ -6,7 +6,7 @@ class Lead
 
   ConfigLead.setup.each {| f | field f[:name], type: f[:type]}
 
-  validates_presence_of :name, :date
+  validates_presence_of :name,:comment
   validates :email, 
             :presence => true, 
             :uniqueness => true,

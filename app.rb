@@ -31,7 +31,13 @@ class App < Sinatra::Base
   end
 
   post "/lead" do
-    Mailer.send_lead(params[:name], params[:email], params[:comment], params[:type])
+    lead = Lead.new(params)
+    if lead.valid?
+      Mailer.send_lead(params[:name], params[:email], params[:comment], params[:type])
+    else
+      status('412')
+      lead.errors.to_json
+    end
   end
 
   get('/') do

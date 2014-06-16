@@ -1,10 +1,15 @@
 var timeout = null;
+var btn = null;
 $(document).on('ready',function(){
+
+ btn = $('#loading-submit-btn')
+
 
 $form = $('#lead'); 
   $form.on('submit',function(e) {
     e.preventDefault();
     var infoLead = $(this).serialize();
+    btn.button('loading');
     $.ajax({
       type: "post",
       url: "/lead",
@@ -12,11 +17,14 @@ $form = $('#lead');
       async: false,
       statusCode: {
         412: function(response) {
+          btn.button('reset')
           errors = $.parseJSON(response.responseText)
           showError(errors);
+
         }
       },
       success: function(x,y){
+        btn.button('reset')
         alert('Created Successfully Lead');
         $form[0].reset();
         $.fancybox.close()
