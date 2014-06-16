@@ -79,4 +79,12 @@ $form = $('#lead');
     });
   }
 
+  $('.panel-collapse.collapse').on('shown.bs.collapse', function () {
+    $(this).parent().find("a[data-toggle='collapse']").html('READ LESS')
+  });
+
+  $('.panel-collapse.collapse').on('hidden.bs.collapse', function () {
+    $(this).parent().find("a[data-toggle='collapse']").html('READ MORE')
+  });
+
 });
