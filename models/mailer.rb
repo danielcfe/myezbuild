@@ -1,6 +1,6 @@
 class Mailer
   def self.send_lead(name, email, comment, type)
-      send_mail :to => 'danielcfe@gmail.com',
+      send_mail :to => ENV['EMAIL_TO'],
         :subject => "Lead from myEZbuild #{name} (#{type})",
         :html_body => report_template(name, email, comment),
         :via => :smtp,
@@ -23,10 +23,10 @@ class Mailer
       :address => 'smtp.gmail.com',
       :port => '587',
       :enable_starttls_auto => true,
-      :user_name => 'notifications@softwarecriollo.com', 
-      :password => 'letmein123456',
+      :user_name => ENV['EMAIL_USER_NAME'], 
+      :password => ENV['EMAIL_PASSWORD'],
       :authentication => :plain,
-      :domain => "localhost"
+      :domain => ENV['EMAIL_DOMAIN']
     }
   end
 

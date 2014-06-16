@@ -1,2 +1,5 @@
 *.swp
 *.sass-cache
+.env.rb
+*.DS
+*.DS_Store
