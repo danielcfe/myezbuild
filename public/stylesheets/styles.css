@@ -180,7 +180,7 @@ li.lead {
 }
 
 .col-md-4 {
-	width: 31% !important;
+	/*width: 31% !important;*/
 }
 
 .col-md-10.checkmarks {
@@ -190,7 +190,7 @@ li.lead {
 .prices {
 	background-color: white;
 	margin: 0 2.2% 0 0;
-	padding: 2%;
+	padding: 3%;
 }
 
 .prices .section-heading-spacer{
@@ -216,7 +216,8 @@ li.lead {
 
 .prices .btn{
   font-size: 1.4em;
-  margin: 0 0 0 3%; 
+	width: 96%;
+	margin: 0 0 15px 2%; 
 }
 .line-through {
 	text-decoration: line-through;
@@ -243,4 +244,26 @@ footer a {
 .smalleritalic {
 	font-size: 100%;
 	font-style:italic;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.leads {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.prices .btn {
+		font-size: 1em;
+		width: 100%;
+		margin: 0 0 15px 0;
+		padding: 5px;
+	}
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.prices .btn {
+		font-size: 1.3em;
+		width: 100%;
+		margin: 0 0 15px 0;
+		padding: 5px;
+	}
 }

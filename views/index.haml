@@ -1,13 +1,13 @@
 / NAV BAR
 %nav.navbar.navbar-default.navbar-fixed-top{role: "navigation"}
-  .container
+  .container-fluid
     .navbar-header
       %button.navbar-toggle{"data-target" => ".navbar-ex1-collapse", "data-toggle" => "collapse", type: "button"}
         %span.sr-only
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-      %a.navbar-brand
+      %a.navbar-brand{ "style" => 'padding-right:0;'}
         %img{:src=>"/img/logo.jpg"}
     / Collect the nav links, forms, and other content for toggling
     .collapse.navbar-collapse.navbar-right.navbar-ex1-collapse
@@ -34,7 +34,7 @@
   .container
     .row
       .col-lg-12
-        .intro-message.col-xs-7#home
+        .intro-message.col-xs-12.col-sm-7#home
           %h2 A new way to manage your construction project.
           %p Designed for you, the homeowner, taking the fear of the unknown out of the home building process and giving you a sense of control even if you have never built before and even you don't know the first thing about construction.
           %a{:href=>"/#pricing"}
@@ -49,7 +49,7 @@
   %h1 Benefits 
   %hr.section-heading-spacer/
   .container
-    .benefits.col-md-4
+    .benefits.col-md-4.col-sm-4
       %img.img-responsive{alt:"", src: "/img/benefits-easy.svg"}/
       %h4 EASY
       %p As easy to use as email. The program comes "pre-set" to build a typical home, all you have to do is adjust the timeline and budget parameters.
@@ -58,7 +58,7 @@
       .collapse1.panel-collapse.collapse
         .panel-body
           Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-    .benefits.col-md-4
+    .benefits.col-md-4.col-sm-4
       %img.img-responsive{alt: "", src: "/img/benefits-informative.svg"}/
       %h4 INFORMATIVE
       %p You can view the progress, timeline, budget, immediate to-do's and emails notices all at once and then drill down to get more information.
@@ -67,7 +67,7 @@
       .collapse2.panel-collapse.collapse
         .panel-body
           Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-    .benefits.col-md-4
+    .benefits.col-md-4.col-sm-4
       %img.img-responsive{alt: "", src: "/img/benefits-affordable.svg"}/
       %h4 AFFORDABLE
       %p When you think of what you are riskind and investing, and it's potential outcomes, this program is astonishingly affordable, practical and a must have.
@@ -79,7 +79,7 @@
 
   / /.container
   .container
-    .benefits.col-md-4
+    .benefits.col-md-4.col-sm-4
       %img.img-responsive{alt: "", src: "/img/benefits-accountability.svg"}/
       %h4 ACCOUNTABILITY
       %p MyEZBuild's owner/builder contract holds the builder accountable to updating the budget and timeline on a specific weekly or bi-weekly basis.
@@ -88,7 +88,7 @@
       .collapse4.panel-collapse.collapse
         .panel-body
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    .benefits.col-md-4
+    .benefits.col-md-4.col-sm-4
       %img.img-responsive{alt: "", src: "/img/benefits-decision.svg"}/
       %h4 DECISIONS
       %p We have eliminated all the guess work by preparing a list of all the material selections you will need to make for a standard 3 bedroom, 2.5 bath home.
@@ -97,7 +97,7 @@
       .collapse5.panel-collapse.collapse
         .panel-body
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    .benefits.col-md-4
+    .benefits.col-md-4.col-sm-4
       %img.img-responsive{alt: "", src: "/img/benefits-mobility.svg"}/
       %h4 MOBILITY
       %p Documents, budgets, timelines, changes, material selections and communication, can be accessed from any mobbile device or computer with internet connection.
@@ -229,51 +229,54 @@
   %h1 Pricing
   %hr.section-heading-spacer/
   .container
-    .col-md-9
+    .col-xs-12.col-md-8.col-md-offset-2
       %p.lead Sign up for MyEZBuild membership while it's still in development and you can lock in your monthly billing for a great discounted rate for life. Billing will start only when the product is released.
     .clearfix
     .row
-      .col-md-4.prices
-        %h3 BASIC
-        %hr.section-heading-spacer/
-        %h4.line-through $89/month
-        %h4.important $39/month - Limited time only
-        %hr.section-between-spacer/
-        %ul.lead
-          %li Single project at a time capabilities.
-          %li Community home owners forum to exchange ideas and ask questions.
-          %li
-            Limited project management:
-            %ul
-              %li No virtual cabinet.
-              %li No integrated email.
-        %button.btn.btn-success.fancymodal{"data-fancybox-href" => "#lead-content","data-type" => 'BASIC'} CONTACT US TO GET STARTED
-      .col-md-4.prices
-        %h3 PREMIUM
-        %hr.section-heading-spacer/
-        %h4.line-through $145/month
-        %h4.important $69/month - Limited time only
-        %hr.section-between-spacer/
-        %ul.lead
-          %li
-            Full Project management:
-            %ul
-              %li Virtual file cabinet.
-              %li Integrated email.
-          %li Manage up to 3 projects at a time.
-          %li Community home owners forum to exchange ideas and ask questions.
-        %button.btn.btn-success.fancymodal{"data-fancybox-href" => "#lead-content","data-type" => 'PREMIUM'} CONTACT US TO GET STARTED
-      .col-md-4.prices
-        %h3 ULTRA
-        %hr.section-heading-spacer/
-        %h4.line-through $195/month
-        %h4.important $99/month - Limited time only
-        %hr.section-between-spacer/
-        %ul.lead
-          %li Unlimited number of projects.
-          %li 1-hour phone call consultation with the EZ Build team per month.
-          %li Unlimited emails to My EZ Builds team regarding your home building process.
-        %button.btn.btn-success.fancymodal{"data-fancybox-href" => "#lead-content","data-type" => 'ULTRA'} CONTACT US TO GET STARTED
+      .col-md-4.col-sm-4.leads
+        .prices
+          %h3 BASIC
+          %hr.section-heading-spacer/
+          %h4.line-through $89/month
+          %h4.important $39/month - Limited time only
+          %hr.section-between-spacer/
+          %ul.lead
+            %li Single project at a time capabilities.
+            %li Community home owners forum to exchange ideas and ask questions.
+            %li
+              Limited project management:
+              %ul
+                %li No virtual cabinet.
+                %li No integrated email.
+          %button.btn.btn-success.fancymodal{"data-fancybox-href" => "#lead-content","data-type" => 'BASIC'} CONTACT US TO GET STARTED
+      .col-md-4.col-sm-4.leads
+        .prices
+          %h3 PREMIUM
+          %hr.section-heading-spacer/
+          %h4.line-through $145/month
+          %h4.important $69/month - Limited time only
+          %hr.section-between-spacer/
+          %ul.lead
+            %li
+              Full Project management:
+              %ul
+                %li Virtual file cabinet.
+                %li Integrated email.
+            %li Manage up to 3 projects at a time.
+            %li Community home owners forum to exchange ideas and ask questions.
+          %button.btn.btn-success.fancymodal{"data-fancybox-href" => "#lead-content","data-type" => 'PREMIUM'} CONTACT US TO GET STARTED
+      .col-md-4.col-sm-4.leads
+        .prices
+          %h3 ULTRA
+          %hr.section-heading-spacer/
+          %h4.line-through $195/month
+          %h4.important $99/month - Limited time only
+          %hr.section-between-spacer/
+          %ul.lead
+            %li Unlimited number of projects.
+            %li 1-hour phone call consultation with the EZ Build team per month.
+            %li Unlimited emails to My EZ Builds team regarding your home building process.
+          %button.btn.btn-success.fancymodal{"data-fancybox-href" => "#lead-content","data-type" => 'ULTRA'} CONTACT US TO GET STARTED
     .row
       .col-md-10.checkmarks
         .col-md-6
@@ -309,7 +312,9 @@
   %hr.section-heading-spacer/
   .container
     .row
-      .col-md-8
+      .col-md-4.col-sm-4.text-center.visible-xs
+        %img{:src=>"/img/tirzah.jpg"}
+      .col-md-8.col-sm-8
         %h3 TIRZAH LYNN WOODS
         %p.smalleritalic Degree: B.A. in Interior Design 1993
         %p.smalleritalic Currently is completing her internship to become an architect in the state of Washington.
@@ -321,10 +326,10 @@
         .collapse12.panel-collapse.collapse
           .panel-body
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      .col-md-4
+      .col-md-4.col-sm-4.text-center
         %img{:src=>"/img/tirzah.jpg"}
     .row
-      .col-md-4
+      .col-md-4.col-sm-4.text-center.hidden-xs
         %img{:src=>"/img/jeffrey.jpg"}
       .col-md-8
         %h3 JEFFREY K. WOODS
@@ -337,7 +342,7 @@
           .panel-body
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
     .row
-      .col-md-8
+      .col-md-8.col-sm-8
         %h3 SOFTWARE CRIOLLO
         %p Lalala
         %p.lead Bio text.
@@ -346,19 +351,19 @@
         .collapse14.panel-collapse.collapse
           .panel-body
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      .col-md-4
+      .col-md-4.col-sm-4.text-center
         %img{:src=>"/img/softwarecriollo.jpg"}
 / End of THE TEAM SECTION
 / FOOTER
 %footer#contact
   .container
     .row
-      .col-md-4
+      .col-md-4.col-sm-4
         %p.lead My EZ Build
         %p.lead P.O. Box XXXX
         %p.lead Bellingham WA, 98225
-      .col-md-4
-      .col-md-4
+      .col-md-4.col-sm-4
+      .col-md-4.col-sm-4
         %p.lead Contact us:
         %a.lead{:href=>"mailto:support@myezbuild.com"} support@myezbuild.com
         %a.lead{:href=>"mailto:softwaresupport@myezbuild.com"} softwaresupport@myezbuild.com
