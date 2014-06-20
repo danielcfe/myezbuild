@@ -88,11 +88,13 @@ $form = $('#lead');
   }
 
   $('.panel-collapse.collapse').on('shown.bs.collapse', function () {
-    $(this).parent().find("a[data-toggle='collapse']").html('READ LESS')
+    $(this).parent().find(".read-less").removeClass('hidden');
+    $(this).parent().find(".read-more").addClass('hidden');
   });
 
   $('.panel-collapse.collapse').on('hidden.bs.collapse', function () {
-    $(this).parent().find("a[data-toggle='collapse']").html('READ MORE')
+    $(this).parent().find(".read-less").addClass('hidden');
+    $(this).parent().find(".read-more").removeClass('hidden');
   });
 
 });
