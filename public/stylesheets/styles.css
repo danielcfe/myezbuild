@@ -120,7 +120,7 @@ p {
 
 .benefits {
 	text-align: center;
-	margin: 0 3% 0 0;
+	padding: 0 3% 0 0;
 }
 
 .benefits p {
@@ -180,11 +180,6 @@ li {
 
 li.lead {
 	margin: 0 !important;
-}
-
-.col-md-4 {
-	/*width: 31% !important;*/
-	width: 30%;
 }
 
 .col-md-10.checkmarks {
@@ -255,8 +250,8 @@ footer a {
 }
 @media (min-width: 768px) and (max-width: 991px) {
 	.leads {
-		padding-left: 5px;
-		padding-right: 5px;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 	.prices .btn {
 		font-size: 1em;
@@ -277,8 +272,8 @@ footer a {
 
 @media (max-width: 767px) {
 	.leads {
-		padding-left: 5px;
-		padding-right: 5px;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 	.prices .btn {
 		font-size: 1em;
