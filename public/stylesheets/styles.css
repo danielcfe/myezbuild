@@ -34,7 +34,7 @@ h1 {
 
 h2 {
 	font-family: "Frutiger", "Helvetica", "Arial";
-	font-size: 3.6em;
+	font-size: 4.3em;
 	line-height: 1em;
 }
 
@@ -44,7 +44,7 @@ h4 {
 }
 
 p {
-	font-size: 1.7em;
+	font-size: 2em;
 	font-family: "FrutigerLight", "Helvetica Neue", "Arial", "sans-serif";
 }
 
@@ -117,8 +117,10 @@ p {
 .content-section-a .container, .content-section-b .container{
 	margin: 2em auto;
 }
+
 .benefits {
 	text-align: center;
+	margin: 0 3% 0 0;
 }
 
 .benefits p {
@@ -127,6 +129,7 @@ p {
 
 .benefits img{
 	margin: 1em auto;
+	width: 40%;
 }
 
 .content-section-b {
@@ -181,6 +184,7 @@ li.lead {
 
 .col-md-4 {
 	/*width: 31% !important;*/
+	width: 30%;
 }
 
 .col-md-10.checkmarks {
@@ -215,7 +219,7 @@ li.lead {
 }
 
 .prices .btn{
-  font-size: 1.4em;
+  font-size: 1.3em;
 	width: 96%;
 	margin: 0 0 15px 2%; 
 }
@@ -244,6 +248,10 @@ footer a {
 .smalleritalic {
 	font-size: 100%;
 	font-style:italic;
+}
+
+.read-less {
+	margin: 2em 0 0 0;
 }
 @media (min-width: 768px) and (max-width: 991px) {
 	.leads {
