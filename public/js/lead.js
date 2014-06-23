@@ -47,10 +47,10 @@ $form = $('#lead');
   }).fancybox({padding : 0});
 
   $(".fancybox").fancybox({
-    openEffect  : 'none',
-    closeEffect : 'none',
-    nextEffect  : 'none',
-    prevEffect  : 'none',
+    openEffect  : 'fade',
+    closeEffect : 'fade',
+    openSpeed : 'fast',
+    closeSpeed: 'fast',
     padding     : 0,
     margin      : [20, 60, 20, 60],
     beforeLoad: function(){
