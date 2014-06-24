@@ -51,6 +51,7 @@ p {
 .lead {
 	font-size: 18px;
 	font-weight: 400;
+	margin-bottom: 0;
 }
 
 .intro-header {
