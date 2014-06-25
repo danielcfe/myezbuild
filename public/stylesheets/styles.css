@@ -44,14 +44,31 @@ h4 {
 }
 
 p {
-	font-size: 2em;
+	font-size: 1.5em;
 	font-family: "FrutigerLight", "Helvetica Neue", "Arial", "sans-serif";
 }
 
 .lead {
-	font-size: 18px;
+	font-size: 1em;
 	font-weight: 400;
 	margin-bottom: 0;
+	line-height: 1.9em;
+}
+
+a.read-more, a.read-less {
+	margin: 0 0 0 1.1em;
+}
+
+.pricing .col-xs-12.col-md-8.col-md-offset-2 p{
+	text-align: center;
+	margin: 0 0 2em 0;
+}
+
+#team a.read-more, #team a.read-less {
+	margin: 0;
+}
+.benefits a.read-more, .benefits a.read-less {
+	margin: 0;
 }
 
 .intro-header {
@@ -119,13 +136,22 @@ p {
 	margin: 2em auto;
 }
 
+#contact p.lead {
+	line-height: 1.9em !important;
+}
+
+#contact a{
+	display: block;
+}
 .benefits {
 	text-align: center;
 	padding: 0 3% 0 0;
+	width: 30%;
+	margin: 0 3% 0 0;
 }
 
 .benefits p {
-	font-size: 1.3em;
+	font-size: 1em;
 }
 
 .benefits img{
@@ -176,7 +202,7 @@ ul {
 }
 
 li {
-	line-height: 1.7em;
+	line-height: 1.9em;
 }
 
 li.lead {
