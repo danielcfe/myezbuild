@@ -48,7 +48,7 @@
 .content-wood
   .content-section-a#benefits
     %h1 Benefits 
-    %hr.section-heading-spacer/
+    %hr.section-heading-spacer
     .container
       .benefits.col-md-4.col-sm-4
         %img.img-responsive{alt:"", src: "/img/benefits-easy.svg"}/
@@ -62,58 +62,57 @@
 
         %a.read-less.hidden{"data-toggle" => "collapse", :href => ".collapse1"} 
           Read less
-
-    .benefits.col-md-4.col-sm-4
-      %img.img-responsive{alt: "", src: "/img/benefits-informative.svg"}/
-      %h4 INFORMATIVE
-      %p You can view the progress, timeline, budget, immediate to-do's and emails notices all at once and then drill down to get more information.
-      %a.read-more{"data-toggle" => "collapse", :href => ".collapse2"} 
-        Read more
-      .collapse2.panel-collapse.collapse
-        .panel-body
-          Know in real time where your project is at and what everyone on your team is looking at. 
-      %a.read-less.hidden{"data-toggle" => "collapse", :href => ".collapse2"} 
-        Read less
-    .benefits.col-md-4.col-sm-4
-      %img.img-responsive{alt: "", src: "/img/benefits-affordable.svg"}/
-      %h4 AFFORDABLE
-      %p When you think of what you are investing, and it's potential outcomes, this program is astonishingly affordable, practical and a must have.
-      %a.read-more{"data-toggle" => "collapse", :href => ".collapse3"} 
-        Read more
+      .benefits.col-md-4.col-sm-4
+        %img.img-responsive{alt: "", src: "/img/benefits-informative.svg"}/
+        %h4 INFORMATIVE
+        %p You can view the progress, timeline, budget, immediate to-do's and emails notices all at once and then drill down to get more information.
+        %a.read-more{"data-toggle" => "collapse", :href => ".collapse2"} 
+          Read more
+        .collapse2.panel-collapse.collapse
+          .panel-body
+            Know in real time where your project is at and what everyone on your team is looking at. 
+        %a.read-less.hidden{"data-toggle" => "collapse", :href => ".collapse2"} 
+          Read less
+      .benefits.col-md-4.col-sm-4
+        %img.img-responsive{alt: "", src: "/img/benefits-affordable.svg"}/
+        %h4 AFFORDABLE
+        %p When you think of what you are investing, and it's potential outcomes, this program is astonishingly affordable, practical and a must have.
+        %a.read-more{"data-toggle" => "collapse", :href => ".collapse3"} 
+          Read more
       .collapse3.panel-collapse.collapse
         .panel-body
           To have an architect or designer manage your building team and monitor your construction could cost 1-5% of your building cost at approximately $100/per hour. My EZ Build is only a fraction of 1% of your construction costs. 
 
       %a.read-less.hidden{"data-toggle" => "collapse", :href => ".collapse3"} 
         Read less
-  / /.container
-  .container
-    .benefits.col-md-4.col-sm-4
-      %img.img-responsive{alt: "", src: "/img/benefits-accountability.svg"}/
-      %h4 ACCOUNTABILITY
-      %p MyEZBuild's owner/builder contract holds the builder accountable to updating the budget and timeline on a specific weekly or bi-weekly basis.
-      %a.read-more{"data-toggle" => "collapse", :href => ".collapse4"} 
-        Read more
-      .collapse4.panel-collapse.collapse
-        .panel-body
-          No more guessing if you are under or over budget, ahead or behind schedule.
-      %a.read-less.hidden{"data-toggle" => "collapse", :href => ".collapse4"} 
-        Read less
-    .benefits.col-md-4.col-sm-4
-      %img.img-responsive{alt: "", src: "/img/benefits-decision.svg"}/
-      %h4 DECISIONS
-      %p We have eliminated the guess work by preparing a list of all the material selections you will need to make for a standard 3 bedroom, 2.5 bath home.
-      %a.read-more{"data-toggle" => "collapse", :href => ".collapse5"} 
-        Read more
-      .collapse5.panel-collapse.collapse
-        .panel-body
-          All material selections are linked to your budget but more importantly are automatically linked your to-do list and your timeline so you know what date those selections need to be made by in order to keep your project on track. 
-      %a.read-less.hidden{"data-toggle" => "collapse", :href => ".collapse5"} 
-        Read less
-    .benefits.col-md-4.col-sm-4
-      %img.img-responsive{alt: "", src: "/img/benefits-mobility.svg"}/
-      %h4 MOBILITY
-      %p Documents, budgets, timelines, changes, material selections and communication, can be accessed from any mobile device or computer with internet connection.
+    //.container
+    .container
+      .benefits.col-md-4.col-sm-4
+        %img.img-responsive{alt: "", src: "/img/benefits-accountability.svg"}/
+        %h4 ACCOUNTABILITY
+        %p MyEZBuild's owner/builder contract holds the builder accountable to updating the budget and timeline on a specific weekly or bi-weekly basis.
+        %a.read-more{"data-toggle" => "collapse", :href => ".collapse4"} 
+          Read more
+        .collapse4.panel-collapse.collapse
+          .panel-body
+            No more guessing if you are under or over budget, ahead or behind schedule.
+        %a.read-less.hidden{"data-toggle" => "collapse", :href => ".collapse4"} 
+          Read less
+      .benefits.col-md-4.col-sm-4
+        %img.img-responsive{alt: "", src: "/img/benefits-decision.svg"}/
+        %h4 DECISIONS
+        %p We have eliminated the guess work by preparing a list of all the material selections you will need to make for a standard 3 bedroom, 2.5 bath home.
+        %a.read-more{"data-toggle" => "collapse", :href => ".collapse5"} 
+          Read more
+        .collapse5.panel-collapse.collapse
+          .panel-body
+            All material selections are linked to your budget but more importantly are automatically linked your to-do list and your timeline so you know what date those selections need to be made by in order to keep your project on track. 
+        %a.read-less.hidden{"data-toggle" => "collapse", :href => ".collapse5"} 
+          Read less
+      .benefits.col-md-4.col-sm-4
+        %img.img-responsive{alt: "", src: "/img/benefits-mobility.svg"}/
+        %h4 MOBILITY
+        %p Documents, budgets, timelines, changes, material selections and communication, can be accessed from any mobile device or computer with internet connection.
 
 / /.content-section-a
 / End of BENEFITS SECTION
@@ -343,7 +342,7 @@
   / End of PRICING SECTION
 
 / THE TEAM SECTION
-  .content-section-b#team
+.content-section-b#team
   %h1 The Team
   %hr.section-heading-spacer/
   .container
