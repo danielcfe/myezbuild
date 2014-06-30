@@ -146,9 +146,7 @@ a.read-more, a.read-less {
 }
 .benefits {
 	text-align: center;
-	padding: 0 3% 0 0;
-	width: 30%;
-	margin: 0 3% 0 0;
+	padding: 0 3%;
 }
 
 .benefits p {
