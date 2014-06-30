@@ -126,6 +126,30 @@
       .col-md-6
         .clearfix
         %h3.section-heading
+          ONE CENTRAL DASHBOARD
+        %ul.lead
+          %li Progress bar shows start and end date.
+          %li To do list notifications.
+          %li Email notifications.
+          %li Budget access and timeline access.
+        %a.read-more{"data-toggle" => "collapse", :href => ".collapse0"} 
+          Read more
+        .collapse0.panel-collapse.collapse
+          .panel-body
+            %ul
+              %li File cabinet to find all your plans and documents
+              %li Quick access to material selection files
+              %li Access portal for you to control users ad permissions
+          %a.read-less.hidden{"data-toggle" => "collapse", :href => ".collapse0"} 
+            Read less
+      .col-md-6
+        %modal.fancybox{'data-fancybox-href' => '/img/big-tour/tour-dashboard.jpg'}
+          %img.img-responsive{alt: "", src: "/img/tour-dashboard.jpg"}/
+    %hr.section-between-spacer/
+    .row
+      .col-md-6
+        .clearfix
+        %h3.section-heading
           ORGANIZE YOUR PROJECT
         %ul.lead
           %li Urgent To-do's are shown on your dashboard when opening your project file.
