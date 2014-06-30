@@ -145,7 +145,8 @@ p {
 }
 
 .content-section-a.pricing{
-	background-image:url('/img/pricing-bgf.jpg');
+	/*background-image:url('/img/pricing-bgf.jpg');*/
+	background-color: #fff;
 	overflow: hidden;
 }
 
@@ -189,8 +190,9 @@ li.lead {
 }
 
 .prices {
+	border: 2px solid #d0d0d0;
 	background-color: white;
-	margin: 0 2.2% 0 0;
+	margin: 0 0 10px 0;
 	padding: 3%;
 }
 
